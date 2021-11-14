@@ -1,0 +1,191 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS test</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Praise&display=swap" rel="stylesheet"> 
+
+    <style>
+        .container
+        {
+            margin:5% 15%;
+            border:2px solid brown;
+            height:80%;
+            width:70%;
+            background: linear-gradient(45deg,green,yellow);
+
+        }
+        h1
+        {
+            text-align: center;
+            font-size: 60px;
+            color:chocolate;
+        }
+        .q1
+        {
+        border:2px solid brown;
+        text-align: center;
+        height:15%;
+        width:55%;
+        margin-left: 20%;
+        padding-left: 5% ;
+        background-color: cornsilk;
+        }
+        .q2{
+            border:2px solid brown;
+        text-align: center;
+        height:15%;
+        width:55%;
+        margin-left: 20%;
+        padding-left: 5% ;
+        background-color: cornsilk;
+
+        }
+        .q3{
+            border:2px solid brown;
+        text-align: center;
+        height:15%;
+        width:55%;
+        margin-left: 20%;
+        padding-left: 5% ;
+        background-color: cornsilk;
+ 
+        }
+#material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color:green;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+.q1
+{
+    display:flex;
+    gap:25%;
+    margin-top: 5%;
+}
+.q2
+{
+    display:flex;
+    gap:36%; 
+    margin-top: 5%;
+
+}
+.q3
+{
+    display:flex;
+    gap:35%;
+    margin-top: 5%;
+
+}
+.logo
+{
+    margin-top: 1.5%;
+}
+button
+{
+    color: green;
+    cursor: pointer;
+}
+h3{
+    color:blue;
+}
+h1{
+    font-family: 'Praise', cursive;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>General Questions</h1>
+        <div class="q1">
+            <div class="para">
+                <h3>Do You Accept All Major Credit Cards?</h3>
+            </div>
+            <div class="logo">
+                <button id="btn1">
+                <span class="material-icons">
+                    
+                    library_add
+                 </span>
+                </button>
+            </div>
+        </div>        
+        <div class="q2">
+            <div class="para">
+                <h3>Do You Support Local Farmers?</h3>
+            </div>
+            <div  class="logo">
+                <button id="btn2" onclick="ques2()">
+                <span class="material-icons">
+                    library_add
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="q3">
+            <div class="para">
+                <h3>Do You Use Organic Ingerdients?</h3>
+            </div>
+            <div  class="logo">
+                <button id="btn3" onclick="ques3()">
+                <span class="material-icons">
+                    library_add
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+       let btnOpen=document.getElementById('btn1');
+       btnOpen.addEventListener('click',()=>{
+           window.location.href="ques1.html";
+
+       })
+       function ques2()
+       {
+        let btnOpen=document.getElementById('btn2');
+       btnOpen.addEventListener('click',()=>{
+           window.location.href="ques2.html";
+
+       })
+       }
+       function ques3()
+       {
+        let btnOpen=document.getElementById('btn3');
+       btnOpen.addEventListener('click',()=>{
+           window.location.href="ques3.html";
+
+       })
+    }
+       
+    
+    </script>
+    
+</body>
+</html>
